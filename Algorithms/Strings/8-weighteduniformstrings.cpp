@@ -7,16 +7,19 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+
+////////////////////////////////////////////////////////////////////////////////
+
 using namespace std;
 
+////////////////////////////////////////////////////////////////////////////////
 
 int main() {
-	std::string			str;
-
+	std::string	str;
 	cin >> str;
-	std::vector< int >	strNumbers;
 
-	int		sequence	= 1;
+	std::vector< int >	strNumbers;
+	int					sequence	= 1;
 	for( int i = 0; i < str.size(); ++i )
 	{
 		if( str[ i ] == str[ i - 1] )
@@ -41,3 +44,4 @@ int main() {
 
 	return 0;
 }
+////////////////////////////////////////////////////////////////////////////////
